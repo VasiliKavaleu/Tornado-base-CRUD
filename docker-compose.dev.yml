@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+    db:
+        image: postgres:11
+        container_name: tornado_db
+        ports:
+            - 32700:5432
+        volumes:
+            - ./db_data:/var/lib/postgresql/db_data
+        environment:
+            POSTGRES_USER: root
+            POSTGRES_PASSWORD: root
+            POSTGRES_DB: tornado
