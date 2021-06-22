@@ -20,3 +20,8 @@ alembic revision --autogenerate -m "Name migrations"
 # Migrate to db
 alembic upgrade head
 ```
+
+Run server
+```bash
+poetry run main.py
+```
